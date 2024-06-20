@@ -13,25 +13,20 @@ Author URI: http://worthyontheweb.co.uk
 */
 
 function hello_worthy_get_quote() {
-	/** These are the lyrics to I love your smile and some random quotes*/
-	$lyrics = "Hello, Worthy,
-	Be ready to evolve,
-	Always work as a team,
-	Improvement is necessary,
-	Ask the dumb question,
-	Don't underestimate the power of design skills,
-	Work closely with your customers,
-	Go beyond just writing code,
-	Pay close attention to the architecture,
-	Consider accessibility,
-	A cup of tea makes everything better,
-	Smile and the whole world smiles with you,
-	Why fit in when you were born to stand out - Dr Seuss,";
+	/** These are some simple pieces of advice for users using wordpress*/
+	$lyrics = "Do not install Elementor
+	Regularly Back up
+	Use Akismet for spam
+	Use readable fonts
+	Use Mailchimp for newsletters
+	Check that it is accessible on mobile
+	Choose a theme that already has features that you are looking for
+	Wordfence is a plugin that disables users from logging in to the admin panel";
 
 	// Here we split it into lines
 	$lyrics = explode( "\n", $lyrics );
 
-	// And then randomly choose a line
+	// And then randomly choose a 
 	return wptexturize( $lyrics[ mt_rand( 0, count( $lyrics ) - 1 ) ] );
 }
 
